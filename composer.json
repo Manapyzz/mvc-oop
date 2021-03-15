@@ -1,7 +1,9 @@
 {
     "name": "alexandrepicard/framework-izi",
     "require": {
-        "symfony/var-dumper": "^5.2"
+        "symfony/var-dumper": "^5.2",
+        "bramus/router": "^1.5",
+        "twig/twig": "^3.3"
     },
     "authors": [
         {

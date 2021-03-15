@@ -1,0 +1,47 @@
+{#<!doctype html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <meta name="viewport"#}
+{#          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">#}
+{#    <meta http-equiv="X-UA-Compatible" content="ie=edge">#}
+{#    <title>Document</title>#}
+{#</head>#}
+{#<body>#}
+{#    <h1>This is homepage</h1>#}
+{#    <div>#}
+{#        Hello {{ username }} !#}
+{#    </div>#}
+{#    <div>#}
+{#        {% for account in accounts %}#}
+{#            <div>#}
+{#                Id : {{ account.id }}<br>#}
+{#                Amount : {{ account.amount }}<br>#}
+{#                Number : {{ account.number }}<br>#}
+{#                UserId : {{ account.user_id }}#}
+{#            </div>#}
+{#            <br><br>#}
+{#        {% endfor %}#}
+{#    </div>#}
+{#</body>#}
+{#</html>#}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ username }}</h1>
+    {% for account in accounts %}
+        <div>
+            {{ account.id }}
+            {{ account.number }}
+        </div>
+    {% endfor %}
+</body>
+</html>
